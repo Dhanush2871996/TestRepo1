@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="167065" started-at="2019-07-31T12:51:54Z" finished-at="2019-07-31T12:54:41Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="167065" started-at="2019-07-31T12:51:54Z" finished-at="2019-07-31T12:54:41Z">
+      <class name="TestCases.PatientEMRTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCases.PatientEMRTest@57baeedf]" name="setUp" is-config="true" duration-ms="11385" started-at="2019-07-31T12:51:54Z" finished-at="2019-07-31T12:52:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test()[pri:1, instance:TestCases.PatientEMRTest@57baeedf]" name="test" duration-ms="155593" started-at="2019-07-31T12:52:05Z" finished-at="2019-07-31T12:54:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- TestCases.PatientEMRTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
