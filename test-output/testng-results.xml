@@ -2,16 +2,23 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="167065" started-at="2019-07-31T12:51:54Z" finished-at="2019-07-31T12:54:41Z">
+  <suite name="Default suite" duration-ms="163598" started-at="2019-08-01T05:21:13Z" finished-at="2019-08-01T05:23:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="167065" started-at="2019-07-31T12:51:54Z" finished-at="2019-07-31T12:54:41Z">
+    <test name="Default test" duration-ms="163598" started-at="2019-08-01T05:21:13Z" finished-at="2019-08-01T05:23:56Z">
       <class name="TestCases.PatientEMRTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCases.PatientEMRTest@57baeedf]" name="setUp" is-config="true" duration-ms="11385" started-at="2019-07-31T12:51:54Z" finished-at="2019-07-31T12:52:05Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCases.PatientEMRTest@53b32d7]" name="setUp" is-config="true" duration-ms="7242" started-at="2019-08-01T05:21:13Z" finished-at="2019-08-01T05:21:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test()[pri:1, instance:TestCases.PatientEMRTest@57baeedf]" name="test" duration-ms="155593" started-at="2019-07-31T12:52:05Z" finished-at="2019-07-31T12:54:41Z">
+        <test-method status="PASS" signature="test(java.lang.String)[pri:1, instance:TestCases.PatientEMRTest@53b32d7]" name="test" duration-ms="156314" started-at="2019-08-01T05:21:20Z" data-provider="MrNoProvider" finished-at="2019-08-01T05:23:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UA1300000107979]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->

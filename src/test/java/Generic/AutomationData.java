@@ -26,4 +26,8 @@ public interface AutomationData {
 	String USERNAME4 = "manishDoc";
 	String PASSWORD4 = "Nmc@1234";
 	
+	String[] Mr_Nos = {
+			"UA1300000107979"
+	};
+	
 }

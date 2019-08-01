@@ -1,5 +1,6 @@
 package TestActions;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
@@ -25,15 +26,21 @@ public class CommonActions extends BaseClass{
 	}
 
 //Test Case 1
-	public void Test(){
+	public List<String> Test(String Mr_No){
+		
+		List<String> defectLinks = new ArrayList<String>();
 		homePage.clickOnMedicalRecordsDropDown();
 		homePage.clickOnPatientEMRlink();
-		patientEMR.enterMrNumberOfPatient("UA1300000107979");//MR No.should take from data provider
+		patientEMR.enterMrNumberOfPatient(Mr_No);//MR No.should take from data provider
 		patientEMR.clickOnGetDetailsButton();
 		patientEMR.clickOnExpandAllLink();
 		
-		List<WebElement> links = patientEMR.getAllLinksInThePage();
+		List<WebElement> links = new ArrayList<WebElement>();
+		links = driver.findElements(By.tagName("a"));
+		
 		Iterator<WebElement> a = links.iterator();
+		
+		
 		
 		while(a.hasNext()) {
 			WebElement link = a.next();
@@ -43,8 +50,10 @@ public class CommonActions extends BaseClass{
 			
 			try {
 					driver.switchTo().frame(0);
-					if(driver.findElement(By.xpath("/html/body/h1[contains(text(),'Exception')]")).isDisplayed()) {
+					if(driver.findElement(By.xpath("//h1[contains(text(),'Exception')]")).isDisplayed()) {
+						
 					System.out.println(linkText+" =========> "+ " Getting Exception fro this link");
+					defectLinks.add(linkText);	
 				}
 
 			}
@@ -54,10 +63,10 @@ public class CommonActions extends BaseClass{
 			catch (StaleElementReferenceException e) {
 				
 			}
-			driver.switchTo().parentFrame();
+			driver.switchTo().parentFrame();		
 			}
 		}
-
+		return defectLinks;
 	} 
 	
 	

@@ -6,7 +6,7 @@
       <class name="TestCases.PatientEMRTest">
         <methods>
           <include name="setUp"/>
-          <include name="test"/>
+          <include name="test" invocation-numbers="0"/>
         </methods>
       </class> <!-- TestCases.PatientEMRTest -->
     </classes>
