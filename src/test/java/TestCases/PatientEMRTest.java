@@ -28,7 +28,7 @@ public class PatientEMRTest extends BaseClass{
 	}
 	
 	
-	@BeforeMethod
+	@BeforeClass
 //	@Parameters({"builderName"})
 	public void setUp()
 	{
@@ -49,6 +49,7 @@ public class PatientEMRTest extends BaseClass{
 		
 		System.out.println(defectLinksNames);
 		//assertTrue(results, defectLinksNames);
+		driver.get("http://10.8.55.122/instanmc/home.do");
 		assertEquals(results, true, defectLinksNames);
 		
 	}

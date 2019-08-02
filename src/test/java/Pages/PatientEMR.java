@@ -7,6 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import Generic.BaseClass;
 
@@ -41,6 +43,8 @@ public class PatientEMR extends BaseClass{
 	
 	public void clickOnExpandAllLink()
 	{
+		WebDriverWait wait=new WebDriverWait(driver, 5);
+		wait.until(ExpectedConditions.visibilityOf(expandAllLink));
 		expandAllLink.click();
 	}
 	

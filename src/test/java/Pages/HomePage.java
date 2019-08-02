@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import Generic.BaseClass;
 
@@ -30,6 +32,9 @@ public class HomePage extends BaseClass{
 	
 	public void clickOnPatientEMRlink()
 	{
+		WebDriverWait wait=new WebDriverWait(driver, 3);
+		wait.until(ExpectedConditions.visibilityOf(patientEMR));
+		
 		patientEMR.click();
 	}
 	
